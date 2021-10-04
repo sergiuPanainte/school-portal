@@ -1,11 +1,9 @@
-// index.js
-
 /**
  * Required External Modules
  */
 
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 
 /**
  * App Variables
@@ -18,6 +16,10 @@ const port = process.env.PORT || "3000";
  *  App Configuration
  */
 
+app.get('/', (req, res) => {
+    res.status(200).send('Welcome to School Portal!');
+});
+
 /**
  * Routes Definitions
  */
@@ -25,3 +27,7 @@ const port = process.env.PORT || "3000";
 /**
  * Server Activation
  */
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}...`);
+});
