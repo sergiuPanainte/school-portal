@@ -151,3 +151,60 @@ a {
     bottom;
     background-size: cover;
 }
+
+.UtilContainer {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    background: transparent;
+    width: 380px;
+    align-items: center;
+}
+
+.Calendar {
+    display: flex;
+    background: url("calendar.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.MyBooks {
+    display: flex;
+    background: url("books.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.MyCourses {
+    display: flex;
+    background: url("course.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.Post {
+    display: flex;
+    background: url("email.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.Notes {
+    display: flex;
+    background: url("to-do-list.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
+
+.Enroll {
+    display: flex;
+    background: url("enroll.png") center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+}
