@@ -7,6 +7,19 @@ block layout-content
             div.Title
                 h3 Overview
             pre.Details=JSON.stringify(userProfile, null, 2)
+        div.UtilContainer
+            a(href="/calendar")
+                div.Calendar
+            a(href="/my-books")
+                div.MyBooks
+            a(href="/my-courses")
+                div.MyCourses
+            a(href="/emails")
+                div.Post
+            a(href="/notes")
+                div.Notes
+            a(href="courses")
+                div.Enroll
         div.NavButtons
             a(href="/logout")
                 div.NavButton Log out
