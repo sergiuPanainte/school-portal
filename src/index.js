@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/user", (req, res) => {
-    res.render("user", { title: "Profile", userProfile: { nickname: "Auth0" } });
+    res.render("user", { title: "Profile", userProfile: { nickname: "Auth0", major: "Computer Science", semester: "5", gpa: "2.3"} });
 });
 
 /**
