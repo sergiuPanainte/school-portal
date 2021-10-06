@@ -145,3 +145,9 @@ a {
     background: url("school.jpg") left center;
     background-size: cover;
 }
+
+.UserView {
+    background: url("userTab.jpeg") left
+    bottom;
+    background-size: cover;
+}
