@@ -1,25 +1,36 @@
 extends layout
 
+block scripts
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src='/js/scripts.js')
+
 block layout-content
     div.View.UserView
         h1.Banner Hello, #{userProfile.nickname}!
-        div.Message
-            div.Title
-                h3 Overview
-            pre.Details=JSON.stringify(userProfile, null, 2)
-        div.UtilContainer
-            a(href="/calendar")
-                div.Calendar
-            a(href="/my-books")
-                div.MyBooks
-            a(href="/my-courses")
-                div.MyCourses
-            a(href="/emails")
-                div.Post
-            a(href="/notes")
-                div.Notes
-            a(href="courses")
-                div.Enroll
+        div.Container.UserContainer
+            div.Message
+                div.Title
+                    h3 Overview
+                pre.Details=JSON.stringify(userProfile, null, 2)
+                button(
+                    type='button'
+                    class='showMore'
+                    id='rotateBtn'
+                    onclick='showMore()'
+                )
+            div.Container.UtilContainer
+                a(href="/calendar")
+                    div.Calendar
+                a(href="/my-books")
+                    div.MyBooks
+                a(href="/my-courses")
+                    div.MyCourses
+                a(href="/emails")
+                    div.Post
+                a(href="/notes")
+                    div.Notes
+                a(href="courses")
+                    div.Enroll
         div.NavButtons
             a(href="/logout")
                 div.NavButton Log out
