@@ -99,6 +99,7 @@ a {
     padding: 30px;
     border-bottom: var(--ui-shadow-border);
     box-shadow: var(--ui-shadow);
+    position: relative;
 }
 
 .Message > .Title {
@@ -152,15 +153,6 @@ a {
     background-size: cover;
 }
 
-.UtilContainer {
-    display: grid;
-    gap: 1rem;
-    grid-auto-flow: column;
-    background: transparent;
-    width: 380px;
-    align-items: center;
-}
-
 .Calendar {
     display: flex;
     background: url("calendar.png") center;
@@ -207,4 +199,30 @@ a {
     background-size: cover;
     width: 120px;
     height: 120px;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.UtilContainer {
+    display: none;
+    gap: 1rem;
+    grid-auto-flow: column;
+    background: transparent;
+    width: auto;
+    align-items: center;
+}
+
+.showMore {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 1rem;
+    right: 0.5rem;
+    background: url("right-arrow.png") center;
+    background-size: cover;
+    border: none;
 }
