@@ -148,8 +148,7 @@ a {
 }
 
 .UserView {
-    background: url("userTab.jpeg") left
-    bottom;
+    background: url("userTab.jpeg") right bottom;
     background-size: cover;
 }
 
@@ -225,4 +224,15 @@ a {
     background: url("next.png") center;
     background-size: cover;
     border: none;
+    border-radius: 10px;
 }
+
+.showMore:hover {
+    -webkit-transition:  1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    border: gray outset 1px;
+}
+
