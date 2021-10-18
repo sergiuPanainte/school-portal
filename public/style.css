@@ -222,7 +222,7 @@ a {
     position: absolute;
     bottom: 1rem;
     right: 0.5rem;
-    background: url("right-arrow.png") center;
+    background: url("next.png") center;
     background-size: cover;
     border: none;
 }
